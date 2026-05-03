@@ -21,7 +21,7 @@
 }
 
 .card__title {
-      min-height: 58px;
+  min-height: 58px;
   margin-bottom: $space-small;
   font-size: $font-size-small;
   line-height: $line-height-small;
@@ -35,7 +35,7 @@
 }
 
 .card__code {
-  margin-bottom: $space-base;
+   margin-bottom: $space-base;
   font-size: $font-size-tiny;
   line-height: $line-height-tiny;
   color: $color-secondary;
@@ -44,13 +44,14 @@
 .card__rating {
   display: flex;
   align-items: center;
-  margin-bottom: $space-large;
+  margin-bottom: $space-large;  /* не 24px, а через змінну */
 }
 
 .card__reviews {
   margin-left: 16px;
   font-size: $font-size-tiny;
   line-height: $line-height-tiny;
+  white-space: nowrap;  /* ← додати це */
 }
 
 .card__price {
